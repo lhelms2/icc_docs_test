@@ -3,19 +3,19 @@
 Account Administration
 =======================
 
-This is the section on account administration.
+Managing your Account
+-----------------------
 
-Account Administrationw, Subsection 1
----------------------------
+When your account is first activated, the default shell is set to *bash*.
 
-This is subsection 1 of account administration.
+The *tcsh* shell is also available. To change your shell to tcsh, add the following line:
 
-Account Administration, Subsection 2
----------------------------
+exec -l /bin/tcsh
 
-This is subsection 2 of account administration.
+to the end of the file named .bash_profile , located in your home ( $HOME ) directory. 
+To begin using this new shell, you can either log out and then log back in, or execute exec -l /bin/tcsh on your command line.
 
-Account Administration, Subsection 3
----------------------------
+The Campus Cluster uses the *module* system to set up the user environment. 
+See the section `Managing Your Environment (Modules) <#modules>`__ for details.
 
-This is subsection 3 of account administration.
+You can reset your NetID password at the `Password Management <https://identity.uillinois.edu/>`__ page.
